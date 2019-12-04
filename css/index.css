@@ -1,0 +1,123 @@
+@import "reset.css";
+@import "common.css";
+@import "//at.alicdn.com/t/font_1545590_svh9vd712q.css";
+
+/* 统一样式  */
+button{
+    cursor: pointer;
+}
+
+/* 统一样式结束 */
+
+/* 首页通用样式开始 */
+.container{
+    margin: 0 auto;
+    width: 950px;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 首页通用样式结束 */
+
+/* 页头开始 */
+.header{
+    height: 90px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+
+
+/* .header .logo, .header .search, .header .menu{
+    height: 30px;
+    border: 1px solid red;
+} */
+
+.header .logo a{
+    background: url("../img/logo_db.png") no-repeat left top/100%;
+    width: 154px;
+    height: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    /* a元素是行盒，设置宽高无效，所以要变成块盒 */
+    display: block;
+}
+.header .search{
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    margin-left: 20px;
+    position: relative;
+}
+.header .search .txt::placeholder{
+    color: #ccc;
+
+}
+.header .search .txt{
+    width: 240px;
+    height: 20px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.header .search button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+}
+
+.header .menu{
+    margin-top: 6px;
+}
+
+.header .menu a{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat left top/463px 20px;
+    height: 20px;
+    width: 40px;
+    float:left;
+    margin-right: 14px;
+
+}
+
+.header .menu .menu-readbook{
+    background-position: 0 0;
+}
+.header .menu .menu-movie{
+    background-position: -60px 0;
+}
+.header .menu .menu-music{
+    background-position: -120px 0;
+}
+.header .menu .menu-group{
+    background-position: -180 0;
+}
+.header .menu .menu-FM{
+    background-position: -240px 0;
+}
+.header .menu .menu-tongcheng{
+    background-position: -300px 0;
+}
+.header .menu .menu-dongxi{
+    background-position: -360px 0;
+}
+.header .menu .menu-doupin{
+    background-position: -422px 0;
+    width: 42px;
+}
+
+
+/* 页头结束 */
