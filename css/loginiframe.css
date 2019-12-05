@@ -1,0 +1,252 @@
+@import "reset.css";
+@import "common.css";
+
+
+
+/* 统一设置 */
+a{
+    color: #41ac52;
+    text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    border: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    height: 34px;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size:  13px;
+}
+
+input[type="text"].more-text-indent{
+    padding-left: 60px;
+}
+
+/* 统一设置结束 */
+.container{
+    width: 300px;
+    height: 300px;
+    line-height: 2;
+    padding: 30px 10px 10px 10px;
+    color: #9b9b9b;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container .login .switch-menu{
+    border-bottom : 1px solid #ececec;
+    font-size:  13px;
+}
+
+
+.container .login .switch-menu span{
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .login .switch-menu span.selected{
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #494949;
+    margin-bottom: -1px;
+}
+.container .login .form .form-item{
+    margin: 10px 0;
+    position: relative;
+    width: 300px;
+}
+
+.container .login .form .form-item .txt{
+    font-size: 12px;
+}
+.container .login .form .form-item .code-right{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    text-decoration: none;
+    color: #41ac52;
+    line-height: 34px;
+    height: 34px;
+    font-size: 13px;
+}
+
+
+.container .login .form .form-item .btn{
+    height: 34px;
+    line-height: 34px;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;    
+}
+
+.container .login .form .form-item .country-code{
+    position: absolute;
+    width: 51px;
+    height: 27px;
+    left: 0;
+    top: 4px;
+    text-align: center;
+    line-height:  27px;
+    font-weight: 700;
+    color: #333;
+    font-size: 15px;
+    border-right: 1px solid;
+    border-color: rgba(0,0,0,.12);
+}
+.container .login .form .form-item .country-code:hover{
+    cursor: pointer;
+}
+.container .login .form .form-item .country-code .choose{
+    /* 铺满整个视口，背景为半透明白色 */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255,0.5);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    cursor: default;
+}
+.container .login .form .form-item .country-code .choose .center{
+    width: 284px;
+    height: 255px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .login .form .form-item .country-code .choose .center .title{
+    background: #ebf5eb;
+    font-size: 16.38px;
+    color: #060;
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+    padding-left: 10px;
+    cursor: auto;
+}
+.container .login .form .form-item .country-code .choose .center .iconguanbi{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: inherit;
+}
+
+.container .login .form .form-item .country-code .choose .center ul{
+    height: 200px;
+    overflow: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.container .login .form .form-item .country-code .choose .center ul li{
+    font-weight: bold;
+    color: #494949;
+    cursor: pointer;
+    border-top: 1px solid #e5e5e5;
+    height: 38px;
+    line-height: 38px;
+    
+}
+.container .login .form .form-item .country-code .choose .center ul li:last-child{
+    border-bottom: 1px solid #e5e5e5;
+} 
+.container .login .form .form-item .country-code .choose .center ul li .right{
+    color: #aaa;
+    font-weight: normal;
+}
+.container .login .form .form-item .country-code .choose .center ul li.selected{
+    color: #42bd56; 
+}
+.container .login .form .form-item .country-code .choose .center ul li.selected .right{
+    color: inherit;
+}
+.container .login .form .form-item .country-code .choose .center ul li.selected .iconzhengque{
+    margin-left: 10px;
+}
+
+.container .login .form .form-item.tip{
+    font-size: 12px;
+    color: #333;
+}
+
+.container .login .bottom{
+    border-top: 1px solid #ddd;
+
+}
+.container .login .bottom .msg{
+    font-size: 11px;
+}
+.container .login .bottom .iconfont{
+    margin-left: 12px;
+}
+
+.container .login .bottom .iconfont.iconweixin{
+    color: #34950E;
+}
+.container .login .bottom .iconfont.iconweibo{
+    color: #EA5D5C;
+}
+
+.container .qrcode{
+    font-size: 13px;
+}
+.container .qrcode .title{
+    color: #333;
+    border-bottom: 1px solid #ececec;
+}
+.container .qrcode .code{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.container .qrcode .code img{
+    width: 170px;
+    height: 170px;
+}
+
+.container .qrcode .bottom{
+    background-color: rgba(0,0,0,.08);
+    color:  #494949;
+    border-radius: 12px;
+    text-align: center ;
+    background-size: 29px; 
+    margin: 0 auto;
+    width: 183px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.container .change{
+    position: absolute;
+    right: -10px;
+    top: 10px;
+}
+
+.container .change .icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.container .change .icon.icon-qrcode{
+    background: url(../img/icon-qrcode.png) no-repeat left top/100% 100%;
+    cursor: pointer;
+}
+
+.container .change .icon.icon-pc{
+    background: url(../img/icon-pc.png) no-repeat left top/100% 100%;
+    cursor: pointer;
+}

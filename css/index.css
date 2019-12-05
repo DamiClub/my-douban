@@ -1,6 +1,5 @@
 @import "reset.css";
 @import "common.css";
-@import "//at.alicdn.com/t/font_1545590_svh9vd712q.css";
 
 /* 统一样式  */
 button{
@@ -15,18 +14,8 @@ button{
     width: 950px;
 }
 
-.left{
-    float: left;
-}
-.right{
-    float:right;
-}
 
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
+
 
 
 /* 首页通用样式结束 */
